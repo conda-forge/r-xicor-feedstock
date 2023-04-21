@@ -1,11 +1,11 @@
-About r-xicor
-=============
+About r-xicor-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-xicor-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=XICOR
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-xicor-feedstock/blob/main/LICENSE.txt)
 
 Summary: Computes robust association measures that do not presuppose linearity. The xi correlation (xicor) is based on cross correlation between ranked increments. The reference for the methods implemented here is Chatterjee, Sourav (2020) <arXiv:1909.10140> This package includes the Galton peas example.
 
