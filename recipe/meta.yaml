@@ -1,4 +1,4 @@
-{% set version = '0.3.3' %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/XICOR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/XICOR/XICOR_{{ version }}.tar.gz
-  sha256: 7927d5dc9533aaad9e665c331458a6f6886b9129270fa850bb1ae531172a0b76
+  sha256: 396c03843f94fa1a37555b91e13185c8f1bb5f20fec958ad6a4bab18b3063a31
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -39,10 +39,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=XICOR
   license: GPL-3.0-only
-  summary: Computes robust association measures that do not presuppose linearity. The xi correlation
-    (xicor) is based on cross correlation between ranked increments. The reference for
-    the methods implemented here is Chatterjee, Sourav (2020) <arXiv:1909.10140> This
-    package includes the Galton peas example.
+  summary: Computes robust association measures that do not presuppose linearity. The xi correlation (xicor) is based on cross correlation between ranked increments. The reference for the methods implemented here is Chatterjee, Sourav (2020) <arXiv:1909.10140> This package includes the Galton peas example.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
