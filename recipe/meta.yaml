@@ -1,6 +1,5 @@
 {% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-xicor
@@ -13,8 +12,7 @@ source:
   sha256: 396c03843f94fa1a37555b91e13185c8f1bb5f20fec958ad6a4bab18b3063a31
 
 build:
-  merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
